@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<dialog id="favDialog" open>
+  <p>Greetings, one and all!</p>
+  <form method="dialog">
+    <button type="button">OK</button>
+  </form>
+</dialog>
+
+</body>
+</html>
+
+<script>
+const favDialog = document.getElementById('favDialog');
+
+window.addEventListener('click', function close(e) {
+	favDialog.close()
+})
+
+</script>
